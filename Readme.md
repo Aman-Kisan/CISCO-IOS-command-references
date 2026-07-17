@@ -17,7 +17,7 @@
 |`banner motd %Any message%`| To set the message-of-the-day banner, that shows up when user logs in|Switch,Router|      
 |`no <command>`| To reverse the affect of a command| Switch,Router|
 |`(config)# line console 0`| To access console port 0| Switch,Router|
-|`(config) line vty 0 15#`|To access the virtual port line from port 0 to 15.| Switch| 
+|`(config)# line vty 0 15`|To access the virtual port line from port 0 to 15.| Switch| 
 |`(config)# interface [interface id]`| To access the interface configuration mode|Switch,Router|
 |`(config)# interface range [interface id]`| To access the interface configuration mode for a range of interfaces (e.g. 0-10, 0-24, 0/1-24, etc.)|Switch,Router|
 |`#show interfaces {interface id}`|To show the status of interface or interfaces | Switch,Router|

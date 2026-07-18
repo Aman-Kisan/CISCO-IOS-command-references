@@ -1,5 +1,11 @@
 ## CISCO IOS commands
 
+- [] : means optional
+- {} : means mandatory
+- [option1|option2] : means choose either option1 or option2
+- <> : means user should replace the text with the desired value
+- | : used as filtering tool. e.g: show running-config | include ip address (This displays the configuration that contains the phare ip address)
+
 ### Basic Configuration
 
 |command|description|runs on|
@@ -18,6 +24,6 @@
 |`no <command>`| To reverse the affect of a command| Switch,Router|
 |`(config)# line console 0`| To access console port 0| Switch,Router|
 |`(config)# line vty 0 15`|To access the virtual port line from port 0 to 15.| Switch| 
-|`(config)# interface [interface id]`| To access the interface configuration mode|Switch,Router|
-|`(config)# interface range [interface id]`| To access the interface configuration mode for a range of interfaces (e.g. 0-10, 0-24, 0/1-24, etc.)|Switch,Router|
-|`#show interfaces {interface id}`|To show the status of interface or interfaces | Switch,Router|
+|`(config)# interface {interface id}`| To access the interface configuration mode|Switch,Router|
+|`(config)# interface range {interface id}`| To access the interface configuration mode for a range of interfaces (e.g. 0-10, 0-24, 0/1-24, etc.)|Switch,Router|
+|`#show interfaces [interface id]`|To show the status of interface or interfaces | Switch,Router|
